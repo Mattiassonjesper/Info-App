@@ -1,27 +1,10 @@
 $( function() {
     var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "London",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
+      "Stockholm",
+      "Copenhagen",
+      "Berlin",
+      "Helsinki",
+      "Oslo"
     ];
     $( "#city" ).autocomplete({
       source: availableTags
