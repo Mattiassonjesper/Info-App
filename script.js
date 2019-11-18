@@ -33,7 +33,12 @@ $(document).ready(function(){
                   wf += '<p><b>' + data.name + ' ' +  parseInt(data.main.temp) + '&deg;C ' + 
                   ' | ' + val.main + ", " + val.description 
 
+                  $.getJSON("data.txt", function(data) {
+                    console.log(data); // displays 'Quote # 2 text goes here'
+                  });
                 });
+
+                
               
                $(".ShowWeatherForcast").html(wf);
               },
@@ -47,6 +52,7 @@ $(document).ready(function(){
               }
 
             })
+           
       };
       // Allows the user to call the weather function with the Enter key or the press of the button
       $("#city").keypress(function() {

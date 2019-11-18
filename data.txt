@@ -1,0 +1,10 @@
+[
+    {
+        "Hej": "Jag heter Jesper",
+        "Jesper": "Jesper"
+    },
+    {
+        "Hej": "Jag heter Marcel",
+        "Marcel": "Marcel"
+    }
+]
