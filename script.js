@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
       
       let callback = function(){
@@ -28,7 +26,7 @@ $(document).ready(function(){
 
                 
               
-               $(".ShowWeatherForcast").html(wf);
+               $(".showForecast").html(wf);
               },
               error: function (error) {
                
@@ -36,7 +34,7 @@ $(document).ready(function(){
 
                  wf += '<p><b>' + error.responseJSON.message + "</b></p>"; 
 
-              $(".ShowWeatherForcast").html(wf);
+              $(".showForecast").html(wf);
               }
 
             })
@@ -47,6 +45,6 @@ $(document).ready(function(){
         if (event.which == 13) callback();
       });
 
-      $("#getWeatherForcast").click(callback);
+      $("#getForecast").click(callback);
 
     });
