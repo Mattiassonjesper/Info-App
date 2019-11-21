@@ -2,10 +2,10 @@
 
 $(document).ready(function(){
       
-      var callback = function(){
+      let callback = function(){
                 
-            var city = $("#city").val();
-            var key  = '5cecfc36afc5a098f339672791ce3272';
+            let city = $("#city").val();
+            let key  = '5cecfc36afc5a098f339672791ce3272';
             
             $.ajax({
               url:'http://api.openweathermap.org/data/2.5/weather',
@@ -14,7 +14,7 @@ $(document).ready(function(){
               data:{q:city, appid: key, units: 'metric'},
 
               success: function(data){
-                var wf = '';
+                let wf = '';
                 $.each(data.weather, function(index, val){
                 
 
@@ -32,7 +32,7 @@ $(document).ready(function(){
               },
               error: function (error) {
                
-               var wf = '';
+               let wf = '';
 
                  wf += '<p><b>' + error.responseJSON.message + "</b></p>"; 
 
