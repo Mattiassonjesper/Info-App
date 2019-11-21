@@ -1,16 +1,4 @@
-/*$( function() {
-  var availableTags = [
-    "ActionScript",
-    "AppleScript",
-    "Asp",
-    "BASIC",
-    "C"
-  ];
-  $( "#city" ).autocomplete({
-    source: availableTags
-  });
-} );
-*/
+
 
 $(document).ready(function(){
       
@@ -34,7 +22,7 @@ $(document).ready(function(){
                   ' | ' + val.main + ", " + val.description 
 
                   $.getJSON("data.txt", function(data) {
-                    console.log(data); // displays 'Quote # 2 text goes here'
+                    console.log(data); 
                   });
                 });
 
