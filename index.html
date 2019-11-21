@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Weather</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
+  <title>Becoming The Weatherman</title>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" ></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
+  <input id="city" placeholder="Choose a city..."></input>
+  <button id="getWeatherForecast">Become the weatherman</button>
 
-  <input id="city" placeholder="City..."></input>
-  <button id="getWeatherForcast">GET THE WEATHER</button>
-  <div class="ShowWeatherForcast"></div>
+  <div class="ShowWeatherForecast"></div>
+
+
   <script src="script.js"></script>
-
 </body>
 </html>
